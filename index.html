@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academian - Aprendizaje para transformar realidades</title>
+  <style>
+    :root {
+      --azul: #2c3e50;
+      --azul-claro: #3498db;
+      --verde: #27ae60;
+      --gris-claro: #f4f4f4;
+      --gris: #ddd;
+      --blanco: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--gris-claro);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--azul);
+      color: var(--blanco);
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      list-style: none;
+      margin-top: 1rem;
+    }
+
+    nav ul li {
+      margin: 0 1rem;
+    }
+
+    nav ul li a {
+      color: var(--blanco);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    #inicio {
+      background: var(--azul-claro);
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+    }
+
+    #inicio h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    #oferta .curso {
+      background: var(--blanco);
+      padding: 1rem;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid var(--verde);
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    #testimonios blockquote {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      border-left: 4px solid var(--azul-claro);
+      padding-left: 1rem;
+    }
+
+    #equipo .miembro {
+      background: var(--blanco);
+      padding: 1rem;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    #blog article {
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background: var(--blanco);
+      border-left: 5px solid var(--azul-claro);
+      border-radius: 5px;
+    }
+
+    form {
+      background: var(--blanco);
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 0.6rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background: var(--verde);
+      color: var(--blanco);
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background: #219150;
+    }
+
+    footer {
+      background: var(--azul);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 99;
+      background-color: var(--azul-claro);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Academian</h1>
+    <p>Aprendizaje para transformar realidades</p>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#oferta">Oferta</a></li>
+        <li><a href="#testimonios">Testimonios</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio">
+    <h2>¡Bienvenido a Academian!</h2>
+    <p>Una plataforma que combina tecnología, juego, pedagogía y pasión por enseñar en cada curso.</p>
+  </section>
+
+  <section id="sobre">
+    <h2>Sobre Academian</h2>
+    <p>Academian nació del deseo de reducir la brecha digital y educativa en comunidades de Chiapas y más allá. Combinamos experiencia en tecnologías educativas, gamificación y formación docente para ofrecer experiencias de aprendizaje inolvidables.</p>
+  </section>
+
+  <section id="oferta">
+    <h2>Nuestra Oferta Académica</h2>
+    <div class="curso">
+      <h3>Gamificación y Aprendizaje Basado en Juegos</h3>
+      <p>Aprende a diseñar experiencias educativas memorables a través del juego.</p>
+    </div>
+    <div class="curso">
+      <h3>Ciudadanía y Seguridad Digital para Docentes</h3>
+      <p>Prepárate para enseñar y proteger a tus alumnos en un mundo cada vez más digital.</p>
+    </div>
+    <div class="curso">
+      <h3>Herramientas Digitales para el Aula</h3>
+      <p>Domina Office, Google Workspace y otras tecnologías clave para tu docencia.</p>
+    </div>
+  </section>
+
+  <section id="testimonios">
+    <h2>Testimonios</h2>
+    <blockquote>“Gracias a Academian pude rediseñar mis clases. Ahora mis alumnos se divierten y aprenden más.” – Profa. Alejandra G.</blockquote>
+    <blockquote>“Participé en el curso de ciudadanía digital. Muy necesario para estos tiempos.” – Prof. Manuel T.</blockquote>
+  </section>
+
+  <section id="equipo">
+    <h2>Nuestro Equipo</h2>
+    <div class="miembro">
+      <h3>Ángel Eduardo Morales Coutiño</h3>
+      <p>Director de Tecnologías Educativas y fundador de Academian. Especialista en gamificación y defensor del aprendizaje con propósito.</p>
+    </div>
+    <div class="miembro">
+      <h3>Colaboradores</h3>
+      <p>Trabajamos con docentes, desarrolladores y psicólogos comprometidos con la educación inclusiva, divertida y significativa.</p>
+    </div>
+  </section>
+
+  <section id="blog">
+    <h2>Desde nuestro blog</h2>
+    <article>
+      <h3>¿Por qué el juego no es una pérdida de tiempo?</h3>
+      <p>Exploramos cómo el juego es parte fundamental del desarrollo humano y cómo puede cambiar el aula.</p>
+    </article>
+    <article>
+      <h3>Cómo crear aulas seguras en el mundo digital</h3>
+      <p>La importancia de la seguridad y la ciudadanía digital en el entorno escolar.</p>
+    </article>
+  </section>
+
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <p>¿Quieres llevar Academian a tu escuela o comunidad? Escríbenos:</p>
+    <form onsubmit="return mostrarMensaje(event)">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Academian. Educación con sentido humano y tecnológico.</p>
+  </footer>
+
+  <button id="topBtn" onclick="scrollToTop()">↑</button>
+
+  <script>
+    // Botón de "ir arriba"
+    window.onscroll = function() {
+      document.getElementById("topBtn").style.display = (window.scrollY > 300) ? "block" : "none";
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function mostrarMensaje(e) {
+      e.preventDefault();
+      alert("Gracias por contactarnos. Te responderemos pronto.");
+      e.target.reset();
+      return false;
+    }
+  </script>
+
+</body>
+</html>
